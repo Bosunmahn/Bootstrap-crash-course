@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbars</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+        .bi-bank, .bi-columns-gap, .bi-arrow-down{
+            font-size: 100px;
+            color: indianred;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="data:image/png;base64,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"
+            alt="Bootstrap"
+            width="35"
+            height="35"
+          />
+          Bootstrap</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+      <div class="bg-dark p-4">
+        <h5 class="text-body-emphasis h4">Collapsed content</h5>
+        <span class="text-body-secondary"
+          >Toggleable via the navbar brand.</span
+        >
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <i class="bi bi-arrow-down mx-5"></i>
+    <i class="bi bi-bank mx-5"></i>
+    <i class="bi bi-columns-gap mx-5"></i>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
